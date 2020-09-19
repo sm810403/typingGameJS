@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: lightslategray;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper-window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    transition: 1s;
+}
+.hide-window{
+    transform: translateY(-100%);
+}
+select {
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+}
+.btn {
+    position: absolute;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: teal;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 5px 10px rgba(255,255,255,0.5);
+}
+.btn:active{
+    background-color: white;
+    color: black;   
+}
+.container{
+    background-color: rgba(81, 87, 173, 1);
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.title{
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.para{
+    padding: 5px;
+}
+.words{
+    margin: 10px;
+    text-shadow: 5px 5px 20px rgb(199, 138, 214);
+}
+input {
+    outline: none;
+    font-size: 24px;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 50px;
+}
+.timer{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 18px;
+}
+.timer .time{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    color: red;
+}
+.scores{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 18px;
+}
+.scores .score{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(1, 63, 1);
+}
